@@ -1,0 +1,18 @@
+﻿@model Project.Models.GameOfferViewModels.PopularGameOfferViewModel
+<tr>
+    <td>
+        <p asp-display-for="@Model.Title"></p>
+    </td>
+    <td>
+        <p asp-display-for="@Model.GameCategory.Name"></p>
+    </td>
+    <td>
+        <p asp-display-for="@Model.GameType.Name"></p>
+    </td>
+    <td>
+        <p asp-display-for="@Model.Year"></p>
+    </td>
+    <td>
+        <a asp-action="Details" asp-route-id="@Model.GameOfferId" class="btn btn-info btn-sm">Details</a>
+    </td>
+</tr>
